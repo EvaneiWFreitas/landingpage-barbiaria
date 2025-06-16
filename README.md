@@ -1,1 +1,1 @@
-# landingpage-barbiaria
+# landingpage-barbearia
