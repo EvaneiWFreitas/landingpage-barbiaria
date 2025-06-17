@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Barbearia William Sairú</title>
 </head>
 
@@ -20,7 +22,7 @@
         <header>
 
             <nav class="header-content container">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down">
                     <a href="#">
                         <i class="fa-brands fa-facebook fa-2x"></i>
                     </a>
@@ -35,17 +37,17 @@
                     </a>
                 </div>
 
-                <div class="hearder-logo">
-                    <img src="assets/logo.svg" alt="logo da barbearia" />
+                <div class="hearder-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="assets/logo.svg" alt="logo da barbearia" />
                 </div>
 
-                <div>
+                <div data-aos="fade-down">
                     <a class="header-button" href="#">Agendar Horário</a>
                 </div>
             </nav>
 
             <!-- MAIN - HERO  -->
-            <main class="hero container">
+            <main class="hero container" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">
                 <h1>
                     ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.
                 </h1>
@@ -61,10 +63,10 @@
     <!---ABOUT -->
     <section class="about">
         <div class="container about-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1500">
                 <img src="assets/images.svg" alt="Imagem sobre a barbearia">
             </div>
-            <div class="about-description">
+            <div class="about-description" data-aos="zoom-out-left" data-aos-delay="300" data-aos-duration="1500">
                 <h2>Sobre</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.
@@ -87,7 +89,7 @@
         <!-- HAIRCUTS -->
         <section class="haircuts">
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
                 <img src="assets/corte1.png" alt="Corte normal">
 
                 <div class="haircut-info">
@@ -99,7 +101,7 @@
             </div>
 
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1700">
                 <img src="assets/corte2.png" alt="Corte normal">
 
                 <div class="haircut-info">
@@ -111,7 +113,7 @@
             </div>
 
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
                 <img src="assets/corte3.png" alt="Corte normal">
 
                 <div class="haircut-info">
@@ -163,13 +165,13 @@
     <!--//FOOTER-->
 
     <!--BOTÃO WHATSAPP-->
-    <a href="https://api.whatsapp.com/send?phone=5521000000000&text=Quero%20fazer%20um%20agendamento!" class="btn-whatsapp" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5521000000000&text=Quero%20fazer%20um%20agendamento!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="3000">
         <img src="assets/whatssapp.svg" alt="Botão do whatsapp" />
         <span class="tootip-text">Agende seu horário conosco!</span>
     </a>
     <!--//BOTÃO WHATSAPP-->
 
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>
